@@ -6,3 +6,9 @@ Template.feed.helpers({
     return Router.current().feedSubscription.ready();
   }
 })
+
+Template.feed.events({
+  'click .js-share': function() {
+    Overlay.open('shareOverlay', this);
+  }
+});
