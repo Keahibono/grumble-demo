@@ -21,3 +21,25 @@ ServiceConfiguration.configurations.upsert(
     }
   }
 );
+
+ServiceConfiguration.configurations.upsert(
+  { service: "facebook" },
+  {
+    $set: {
+      clientId: "1624452264458581",
+      loginStyle: "popup",
+      secret: "7911016187a44b373d0e8b81a944f3b3"
+    }
+  }
+);
+
+ServiceConfiguration.configurations.upsert(
+  { service: "google" },
+  {
+    $set: {
+      clientId: "959537698298-o6m1fvqvt717maifjp196bemi3ku00hu.apps.googleusercontent.com",
+      loginStyle: "popup",
+      secret: "vfbVr4zNmQFTAARGBq2jiPeX"
+    }
+  }
+);
