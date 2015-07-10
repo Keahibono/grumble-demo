@@ -29,9 +29,26 @@
     display: block;
   }
 }
-.js-signin.btn-facebook {
-  background-color: #3A5795;
-}
-.js-signin.btn-google {
-  background-color: #DC4A38;
+.right {
+  position: absolute;
+  right: 0;
+  padding: 0 1.25rem;
+  .js-signin {
+    display: block;
+  }
+  .js-signin.btn-facebook {
+  background-color: #6178AA;
+  width: 100%;
+  margin-bottom: .5em;
+  &:hover {
+    background-color: #3A5795;
+    }
+  }
+  .js-signin.btn-google {
+    background-color: #E36E5F; 
+    width: 100%;
+    &:hover {
+      background-color: #DC4A38;
+    }
+  }
 }
