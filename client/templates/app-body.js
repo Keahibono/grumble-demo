@@ -168,5 +168,14 @@ Template.appBody.events({
       this.callback();
       notifications.remove(this._id);
     }
+  },
+
+  'click .js-signin.btn-facebook': function() {
+    Meteor.loginWithFacebook({loginStyle: 'redirect'});
+  },
+
+  'click .js-signin.btn-google': function() {
+    Meteor.loginWithGoogle({loginStyle: 'redirect'});
   }
+
 });
