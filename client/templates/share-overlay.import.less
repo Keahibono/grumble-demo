@@ -1,4 +1,7 @@
 .overlay.share {
+  .icon-cross {
+    color: #FF862F;
+  }
   .wrapper-camera {
     .position(absolute, auto, 0, 0, 0, 100%);
     text-align: center;
@@ -11,6 +14,10 @@
       color: @color-medium;
       margin-bottom: .75rem;
     }
+    .icon-camera {
+      background-color: #FF862F;
+      border-color: #FF862F; 
+    }
   }
 
   .bg-image {
@@ -22,9 +29,10 @@
 
   .form-share {
     .background-image(linear-gradient(top, rgba(255,255,255,.9), rgba(255,255,255,1) 10%, @color-empty 100%));
-    .position(absolute, auto, 0, 0, 0, 100%);
+    .position(absolute, 0, 0, 0, 0, 100%);
     .transform(translate3d(0,0,0));// Gpu rendering
     min-height: 50%;
+    height: 50%;
     padding-bottom: 3rem;
 
     .form-group {
@@ -65,7 +73,10 @@
     }
   }
 
-  .btn-primary { .position(absolute, auto, 0, 0, 0, 100%); }
+  .btn-primary { 
+    background-color: #FF862F;
+    .position(absolute, auto, 0, 0, 0, 100%); 
+  }
 }
 .auth {
   background: #FF9900;
