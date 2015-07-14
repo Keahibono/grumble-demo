@@ -1,15 +1,21 @@
+<!-- should have same structure as activiy.html -->
 <template name="recipeItem">
-  <a class="item-recipe {{highlightedClass}}" href="{{path}}">
+  <a class="item-activity {{highlightedClass}}" href="{{path}}">
     {{#with recipe}}
       <span class="attribution">
-        <span class="title-recipe">{{title}}</span>
-        <span class="metadata-recipe">
-          <span class="author-recipe">{{source.name}}</span>
-          <span class="bookmarks-recipe"><span class="icon-bookmark"></span> {{bookmarkCount}}</span>
+        <span class="avatar">
+          <img class="avatar-image" src="{{recipeImage recipe=recipe size=size}}" />
         </span>
-      </span>
+        <span class="meta">
+          <span class="author">{{title}}</span>
+          <span class="timestamp">2 hours ago</span>
+          <span class="metadata-recipe">
+            <br><span class="author-recipe">{{source.name}}</span>
+            <span class="location">{{location}}</span>
+          </span>  
+        </span>
+    </span>
     {{/with}}
 
-    <img src="{{recipeImage recipe=recipe size=size}}" />
   </a>
 </template>

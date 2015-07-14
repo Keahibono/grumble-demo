@@ -3,11 +3,11 @@
   <div class="page recipe {{activeTabClass}}">
     {{#nav title='Recipe' black=true back=true}}
       {{#if bookmarked}}
-        <a href="#" class="nav-item js-remove-bookmark bookmarked"><span class="icon-bookmark"></span></a>
+        <!-- <a href="#" class="nav-item js-remove-bookmark bookmarked"><span class="icon-bookmark"></span></a> -->
       {{else}}
-        <a href="#" class="nav-item js-add-bookmark"><span class="icon-bookmark-hollow"></span></a>
+        <!-- <a href="#" class="nav-item js-add-bookmark"><span class="icon-bookmark-hollow"></span></a> -->
       {{/if}}
-      <a href="#" class="nav-item js-share"><span class="icon-camera"></span></a>
+      <!-- <a href="#" class="nav-item js-share"><span class="icon-camera"></span></a> -->
     {{/nav}}
 
     <div class="image-recipe" style="background-image: url('{{recipeImage recipe=this size='full'}}')"></div>
@@ -17,7 +17,7 @@
       <div class="metadata-wrapper">
         <p class="description-recipe">{{excerpt}}</p>
         <span class="source">{{source.name}}</span>
-        <span class="time">{{cookTime}}</span>
+        <span class="time">{{location}}</span>
       </div>
 
       <div class="btns-group">
@@ -30,10 +30,14 @@
     <div class="content-scrollable static-nav make-scrollable">
       <a class="btn-tertiary js-share"><span class="icon-camera"></span> Share Your Despair</a>
 
-      <h2 class="list-title">Recent Pugs</h2>
-      <ul class="list-ingredients">
+      <h2 class="list-title">Recent Grumbles</h2>
+      <ul class="list-activities">
         {{#each ingredients}}
-          <li class="item-ingredient">{{this}}</li>
+        <li>
+          <span class="timestamp">2 hours ago</span>
+          <br><span class="item-post">{{this}}</span>
+          <!-- <br><span class="location"><span class="icon-pin"></span>Kakaako, Hawaii</span> -->
+        </li>
         {{/each}}
       </ul>
 

@@ -1,18 +1,47 @@
 <template name="about">
   <div class="page about">
-    {{> nav title='About' black=true}}
+    {{> nav title='Connections' black=false}}
 
     <div class="content-scrollable">
       <div class="bg-image about">
         <h1 class="title-about">
-          <img src="img/app/title-about.svg" alt="Go Local"/>
+          <img src="img/app/grumble-text-logo.png" alt="Grumble"/>
         </h1>
       </div>
-      <div class="description-about">
-        <p>Constantin, Keahi, and Dana</p>
-      </div>
-
+      <h2 class="list-title">Pugs with similar grumbles</h2> 
+      <!-- TODO should create a template for single list item and generate loop -->
+      <ul class="list-similar-grumbles">
+        <li>
+          <div class="bubble">Traffic sucks</div>
+          <span class="avatar">
+            <img class="image-avatar" src="img/app/pug.png" alt="Pug">
+           </span>  
+        </li>
+        <li>
+          <div class="bubble">Learn how to drive!</div>
+          <span class="avatar">
+            <img class="image-avatar" src="img/app/pug.png" alt="Pug">
+           </span>  
+        </li>
+        <li>
+          <div class="bubble">People need to learn how to drive</div>
+          <span class="avatar">
+            <img class="image-avatar" src="img/app/pug.png" alt="Pug">
+           </span>  
+        </li>
+        <li>
+          <div class="bubble">Been stuck in traffic for hours!</div>
+          <span class="avatar">
+            <img class="image-avatar" src="img/app/pug.png" alt="Pug">
+           </span>  
+        </li>
+        <li>
+          <div class="bubble">HItraffic is killing me</div>
+          <span class="avatar">
+            <img class="image-avatar" src="img/app/pug.png" alt="Pug">
+           </span>  
+        </li>
+      </ul>
     </div>
-    <a href="https://grumble.meteor.com" class="btn-primary js-open" target="_blank">Learn More</a>
   </div>
 </template>

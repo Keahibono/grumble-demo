@@ -5,6 +5,14 @@ nav {
   background: #FF9900;
   text-align: center;
   z-index: 10;
+  
+  a {
+    color: white;
+
+    &:hover {
+      color: black;
+    }
+  }
 
   &.black {
     background: transparent;
@@ -56,7 +64,7 @@ nav {
     display: inline-block;
     height: 3rem;
     width: 40px;
-
+    
     &:active { opacity: .5; }
 
     [class^="icon-"],
@@ -72,6 +80,7 @@ nav {
     &.right {
       left: auto;
       right: 0;
+      top: 30%;
     }
   }
 }
