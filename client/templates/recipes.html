@@ -1,17 +1,18 @@
 <template name="recipes">
   <div class="page recipes">
-    {{> nav title='Recipes' black=true}}
+    {{> nav title='Explore' black=false}}
 
     <div class="content-scrollable">
-      <div class="list-recipes">
-        {{#each this}}
-          {{#if highlighted}}
-            {{> recipeItem recipe=this size='large'}}
-          {{else}}
-            {{> recipeItem recipe=this size='small'}}
-          {{/if}}
-        {{/each}}
-      </div>
+      <form action="">
+        <input type="search" name="search" placeholder="Search">
+      </form>
+      <ul class="list-categories">
+        <li class="item-category"><a href="#">Traffic</a></li> 
+        <li class="item-category"><a href="#">Work</a></li> 
+        <li class="item-category"><a href="#">School</a></li> 
+        <li class="item-category"><a href="#">People</a></li> 
+        <li class="item-category"><a href="#">Weather</a></li> 
+      </ul>
     </div>
 
   </div>
