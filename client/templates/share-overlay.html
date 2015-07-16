@@ -4,12 +4,8 @@
 
       {{#unless attachedImage}}
         <a href="#" class="js-close-overlay overlay-dismiss"><span class="icon-cross"></span></a>
-        <div class="wrapper-heading">
-          <div class="title-overlay">Share</div>
-          <div class="subtitle-overlay">Share Your Despair.</div>
-        </div>
 
-        <form class="form-share">
+        <!-- <form class="form-share">
           <div class="form-group">
             <div class="avatar">
               <img src="{{avatar}}" class="image-avatar">
@@ -19,7 +15,8 @@
               autocapitalize="off" autocorrect="off"
               required maxlength="140"
               class="message-share"
-              placeholder="Whatcha grumblin' about?"></textarea>
+              placeholder="Whatcha grumblin' about?">
+            </textarea>
           </div>
 
           <div class="wrapper-checkbox">
@@ -36,20 +33,19 @@
               Share
             {{/if}}
           </button>
-        </form>
+        </form> -->
 
         <div class="wrapper-camera">
           <a class="js-attach-image btn-camera"><span class="icon-camera"></span></a>
           <div class="subtext-camera">Add your photo</div>
         </div>
-      {{else}}
+        {{else}}
         <a href="#" class="js-unattach-image overlay-back"><span class="icon-arrow-left-alt"></span></a>
         <div class="title-page">Share</div>
         <a href="#" class="js-close-overlay overlay-dismiss"><span class="icon-cross"></span></a>
 
         <div class="bg-image" style="background-image: url('{{attachedImage}}')"></div>
-
-        <!-- <form class="form-share">
+        <form class="form-share">
           <div class="form-group">
             <div class="avatar">
               <img src="{{avatar}}" class="image-avatar">
@@ -76,7 +72,7 @@
               Share
             {{/if}}
           </button>
-        </form> -->
+        </form>
       {{/unless}}
 
     </div>

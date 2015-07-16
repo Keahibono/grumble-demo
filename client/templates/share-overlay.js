@@ -47,7 +47,6 @@ Template.shareOverlay.events({
     var tweet = Session.get(TWEETING_KEY);
     
     Meteor.call('createActivity', {
-      recipeName: self.name,
       text: text,
       image: Session.get(IMAGE_KEY)
     }, tweet, Geolocation.currentLocation(), function(error, result) {
