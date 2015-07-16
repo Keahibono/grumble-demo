@@ -23,5 +23,9 @@ Template.activity.helpers({
   path: function() {
     return Router.path('recipe', { name: this.recipeName },
       { query: { activityId: this._id } })
+  },
+  timestamp: function() {
+    return moment(this.date).fromNow();
   }
+
 })
