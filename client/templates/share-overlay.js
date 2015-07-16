@@ -54,14 +54,14 @@ Template.shareOverlay.events({
         alert(error.reason);
       } else {
         Template.appBody.addNotification({
-          action: 'View',
-          title: 'Your photo was shared.',
-          callback: function() {
-            Router.go('recipe', { name: self.name }, 
-              { query: { activityId: result } });
+          // action: 'View',
+          title: 'Your despair was shared.'
+          // callback: function() {
+          //   Router.go('recipe', { name: self.name }, 
+          //     { query: { activityId: result } });
 
-            Template.recipe.setTab('feed');
-          }
+          //   Template.recipe.setTab('feed');
+          // }
         });
       }
     });
