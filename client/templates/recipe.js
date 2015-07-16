@@ -55,7 +55,7 @@ Template.recipe.helpers({
   }
 });
 
-Template.recipe.events({
+Template.recipes.events({
   'click .js-add-bookmark': function(event) {
     event.preventDefault();
 
@@ -88,4 +88,5 @@ Template.recipe.events({
   'click .js-share': function() {
     Overlay.open('shareOverlay', this);
   }
+
 });
