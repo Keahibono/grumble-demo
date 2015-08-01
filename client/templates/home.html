@@ -13,35 +13,22 @@
         <span class="arrow"></span>
       </div>
 
-    <!--   <div class="callout-news">
-        <span class="title-callout">News</span>
-        {{latestNews.text}}
-      </div> -->
+      <div class="callout-news">
+        <span class="title-callout">Grumble News</span>
+        Grumble categories is well on it's way! Soon you'll be able to follow your favorite grumpy categories.
+      </div>
 
       <h2 class="list-title">Get Ready to Gruuuuummmmble!</h2>
       <div class="list-subtitle">Read a Pug. Start a Pug</div>
-      <!-- <div class="list-activities">
+      <a href="{{pathFor 'feed'}}" class="btn-primary">Take A Walk In Our Pug Park</a>
+
+      <h2 class="list-title">Recent Grumbles</h2>
+      <div class="list-activities">
         {{#each activities}}
           {{> activity}}
-        {{else}}
-          <div class="wrapper-message">
-            <div class="title-message">No one is grumbling yet!</div>
-            <div class="subtitle-message">Share your despair.</div>
-          </div>
         {{/each}}
-      </div> -->
-      <a href="{{pathFor 'feed'}}" class="btn-primary">Grumble Space</a>
-
-      <h2 class="list-title">Our Top Pugs Of The Day</h2>
-      <div class="list-subtitle">Coming Soon</div>
-      <!-- <div class="list-activities">
-        {{#each featuredRecipes}}
-          {{> recipeItem recipe=this size='small'}}
-        {{/each}}
-      </div> -->
-
-<!--       <a href="{{pathFor 'recipes'}}" class="btn-primary">Take A Walk In Our Grumble Park</a> -->
+      </div>
+      <a href="{{pathFor 'feed'}}" class="btn-primary">Read More Grumbles</a>
     </div>
-
   </div>
 </template>

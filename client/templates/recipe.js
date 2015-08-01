@@ -52,6 +52,9 @@ Template.recipe.helpers({
   },
   activities: function() {
     return Activities.find({recipeName: this.name}, {sort: {date: -1}});
+  },
+  ready: function() {
+    return Router.current().feedSubscription.ready();
   }
 });
 
@@ -90,3 +93,18 @@ Template.recipes.events({
   }
 
 });
+
+// Only on Client
+// if (Meteor.isClient) {
+//   Template.filters.events({
+//     'click .filter' : function () {
+//       var instance = EasySearch.getComponentInstance(
+//         { index : 'recipes' }
+//       );
+//       // Change the currently filteredCategories like this
+//       EasySearch.changeProperty('recipes', 'filteredCategories', categories);
+//       // Trigger the search again, to reload the new products
+//       instance.triggerSearch();
+//     }
+//   });
+// }

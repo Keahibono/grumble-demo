@@ -11,7 +11,7 @@ Meteor.publish('latestActivity', function () {
 });
 
 Meteor.publish('feed', function() {
-  return Activities.find({}, {sort: {date: -1}, limit: 10});
+  return Activities.find({}, {sort: {date: -1}});
 });
 
 Meteor.publish('recipe', function(name) {
