@@ -49,7 +49,7 @@ Template.shareOverlay.events({
     Meteor.call('createActivity', {
       text: text
       // image: Session.get(IMAGE_KEY)
-    }, tweet, Geolocation.currentLocation(), function(error, result) {
+    }, tweet, function(error, result) {
       if (error) {
         alert(error.reason);
       } else {

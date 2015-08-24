@@ -3,7 +3,7 @@
   nav.scrolled .title-page { opacity: 1; }
 
   .bg-image.home {
-    height: 8em;
+    height: 5em;
     background-color: #FF862F;
 
     // Achieves down arrow mask effect
@@ -38,6 +38,47 @@
       z-index: 1;
     }
   }
+
+  .content-scrollable { 
+    background-color: #FF862F;
+  }
+  .list-activities {
+    min-height: 0em;
+  }
+  .logo {
+      position: absolute;
+      width: 20%;
+      transform: translateX(-50%);
+      -webkit-transform: translateX(-50%);
+      -moz-transform: translateX(-50%);
+      left: 50%;
+  }
+  #bubble {
+      position: relative;
+      width: 100%;
+      height: 70px;
+      -webkit-border-radius: 10px;
+      -moz-border-radius: 10px;
+      border-radius: 10px;
+      border: 5px solid white;
+      margin: 0 auto;
+      box-shadow: 0 0 10px #B2B2B2;
+      -webkit-box-shadow: 0 0 10px #B2B2B2;
+    }
+    #bubble:after {
+      content: '';
+      position: absolute;
+      border-style: solid;
+      border-width: 15px 15px 0;
+      border-color: #FFFFFF transparent;
+      display: block;
+      width: 0;
+      z-index: 1;
+      bottom: -15px;
+      left: 110px;
+    }
+
+  .callout-news {background-color: white;}
 
   .title-home {
     .position(absolute, 55%, 50%, auto, auto, 60%);
