@@ -10,7 +10,9 @@
         <span class="author">{{firstName}}</span>
         <span class="timestamp">{{timestamp date}}</span>
         <br> {{text}}
-        <!-- <br><span class="location"><span class="icon-pin"></span>{{place}}</span> -->
+        {{#if place}}
+          <br><span class="location"><span class="icon-pin"></span>{{place}}</span>
+        {{/if}}  
        </span>
     </span>
   </a>
