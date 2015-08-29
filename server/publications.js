@@ -18,6 +18,18 @@ Meteor.publish('trafficFeed', function() {
   return Activities.traffic();
 });
 
+Meteor.publish('schoolFeed', function() {
+  return Activities.school();
+});
+
+Meteor.publish('peopleFeed', function() {
+  return Activities.people();
+});
+
+Meteor.publish('weatherFeed', function() {
+  return Activities.weather();
+});
+
 Meteor.publish('workFeed', function() {
   return Activities.work();
 });
