@@ -1,11 +1,11 @@
-Template.weatherFeed.helpers({
+Template.techFeed.helpers({
   
   activities: function() {
-    return Activities.weather();
+    return Activities.tech();
   }
 });
 
-Template.weatherFeed.events({
+Template.techFeed.events({
   'click .js-share': function() {
     Overlay.open('shareOverlay', this);
   }

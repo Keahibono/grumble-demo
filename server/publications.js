@@ -38,6 +38,10 @@ Meteor.publish('politicsFeed', function() {
   return Activities.politics();
 });
 
+Meteor.publish('techFeed', function() {
+  return Activities.tech();
+});
+
 Meteor.publish('recipe', function(name) {
   check(name, String);
   return [
