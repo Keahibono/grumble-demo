@@ -34,6 +34,10 @@ Meteor.publish('workFeed', function() {
   return Activities.work();
 });
 
+Meteor.publish('politicsFeed', function() {
+  return Activities.politics();
+});
+
 Meteor.publish('recipe', function(name) {
   check(name, String);
   return [

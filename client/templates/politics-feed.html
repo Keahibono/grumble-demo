@@ -1,0 +1,25 @@
+<template name="politicsFeed">
+  <div class="page politics-feed whats-cooking">
+
+    {{>nav title="Politics"}}
+    <div class="content-scrollable">
+      <div class="list-activities {{#unless ready}}loading{{/unless}}">
+        {{#if activities}}
+          {{#each activities}}
+            {{> activity}}
+          {{else}}
+            <div class="wrapper-message">
+              <div class="title-message">No one is grumbling about politics yet!</div>
+              <div class="btn-primary"><a class="js-share">Share your dispair</a></div>
+            </div>
+          {{/each}}
+        {{else}}
+          <div class="wrapper-message">
+            <div class="icon-sync"></div>
+            <div class="title-message">Loading</div>
+          </div>
+        {{/if}}
+      </div>
+    </div>
+  </div>
+</template>
