@@ -16,7 +16,11 @@ Meteor.publish('feed', function() {
 
 Meteor.publish('trafficFeed', function() {
   return Activities.traffic();
-})
+});
+
+Meteor.publish('workFeed', function() {
+  return Activities.work();
+});
 
 Meteor.publish('recipe', function(name) {
   check(name, String);
