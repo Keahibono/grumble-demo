@@ -11,8 +11,12 @@ Meteor.publish('latestActivity', function () {
 });
 
 Meteor.publish('feed', function() {
-  return Activities.find({}, {sort: {date: -1}});
+  return Activities.find({}, {sort: {date_created: -1}});
 });
+
+Meteor.publish('trafficFeed', function() {
+  return Activities.traffic();
+})
 
 Meteor.publish('recipe', function(name) {
   check(name, String);
